@@ -1,10 +1,11 @@
 x = int(input())
-z = 0
-for a in range(50):
-    for b in range(50):
-        if 5 * a + 7 * b == x:
-            z += 1
-if z >= 1:
-    print('да')
+a = 0
+for y in range(1, 100):
+    if 2 ** y == x:
+        a += 1
+    else:
+        pass
+if a >= 1:
+    print('верно')
 else:
-    print('нет')
+    print('неверно')

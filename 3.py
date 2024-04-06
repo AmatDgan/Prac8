@@ -1,9 +1,9 @@
-N, M = map(int, input().split('x'))
-K = int(input())
-if K % N == 0 or K % M == 0:
-    if K < N * M:
-        print('успешно')
+import math
+
+while True:
+    x = int(input('Введите число '))
+    if int(x ** (1/2)) == math.sqrt(x):
+        break
     else:
-        print('неосуществимо')
-else:
-    print('неосуществимо')
+        pass
+print(f'Число {x} является полным квадратом')

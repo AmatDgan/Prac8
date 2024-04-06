@@ -1,5 +1,6 @@
-x = int(input())
-if 1 <= x <= 201:
-    print(x - 1)
-else:
-    print('цифра не из ряда')
+N = int(input())
+a = 0
+while N > 1:
+    N = N / 2
+    a += 1
+print(a)

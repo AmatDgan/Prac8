@@ -1,11 +1,7 @@
-x = input()
-if 'a' in x or 'c' in x or 'e' in x or 'g' in x:
-    if '1' in x or '3' in x or '5' in x or '7' in x:
-        print('черный')
-    else:
-        print('белый')
+x = int(input())
+a = 0
+if x % 2 == 0:
+    b = (1 + x) * (x // 2)
 else:
-    if '2' in x or '4' in x or '6' in x or '8' in x:
-        print('черный')
-    else:
-        print('белый')
+    b = (1 + x) * (x // 2) + (x + 1) // 2
+print(b)
