@@ -1,9 +1,9 @@
 import math
 
 while True:
-    x = int(input('Введите число '))
-    if int(x ** (1/2)) == math.sqrt(x):
+    z = int(input('Введите число '))
+    if int(z ** (1/2)) == math.sqrt(x):
         break
     else:
         pass
-print(f'Число {x} является полным квадратом')
+print(f'Число {z} является полным квадратом')
