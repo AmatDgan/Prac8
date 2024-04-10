@@ -1,4 +1,10 @@
-N = int(input())
-for x in range(1, N + 1):
-    if x ** 3 <= N:
-        print(x ** 3, end=' ')
+x = int(input())
+b = 0
+for y in range(2, x + 1):
+    a = 0
+    for i in range(1, y):
+        if y % i == 0:
+            a += i
+    if y == a:
+        b += 1
+print(b)

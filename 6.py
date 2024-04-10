@@ -1,5 +1,3 @@
 N = int(input())
-k = 1
-while k <= N:
-    print(k)
-    k *= 2
+for x in range(1, N + 1):
+    print(" " * (N - x), '*' * x)

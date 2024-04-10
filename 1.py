@@ -1,6 +1,8 @@
-a = 0
-for x in range(100, 1000):
-    if x % 17 == 0:
-        print(x)
-        a += 1
-print(a)
+y = 0
+while True:
+    x = int(input())
+    if x == -1:
+        break
+    if x > y:
+        y = x
+print(y)
