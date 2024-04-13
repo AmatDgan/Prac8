@@ -1,6 +1,3 @@
-N = int(input())
-for i in range(2, N + 1):
-    for t in range(2, int(i ** 0.5) + 1):
-        if i % t == 0:
-            break
-    print(i)
+s = '123456789'
+for i in range(1, len(s) + 1):
+    print(s[:i], '*', '9', '+', i + 1, '=', int(s[:i]) * 9 + (i + 1))
